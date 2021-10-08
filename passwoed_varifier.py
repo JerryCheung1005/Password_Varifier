@@ -33,8 +33,6 @@ def main():
                 if answer == 1:
                     pass
 
-                else:
-                    break
 
         password = input("Enter a password: ")
         if Try_time == 5:
@@ -63,6 +61,7 @@ def is_valid_password(password):
     if len(password) < MIN_LENGTH or len(password) > MAX_LENGTH:
         return False
 
+    # Calculate lower, upper, digit and special char
     count_lower = 0
     count_upper = 0
     count_digit = 0
