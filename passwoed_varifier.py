@@ -1,5 +1,4 @@
 MIN_LENGTH = 10
-MAX_LENGTH = 10000
 SPECIAL_CHARS_REQUIRED = False
 SPECIAL_CHARACTERS = "!@#$%^&*()_-=+`~,./'[]<>?{}|\\"
 
@@ -33,7 +32,6 @@ def main():
                 if answer == 1:
                     pass
 
-
         password = input("Enter a password: ")
         if Try_time == 5:
             print("You have exceed the max number of chances! Bye.")
@@ -58,7 +56,7 @@ def main():
 def is_valid_password(password):
     """Determine if the provided password is valid."""
     # if length is wrong, return False
-    if len(password) < MIN_LENGTH or len(password) > MAX_LENGTH:
+    if len(password) < MIN_LENGTH:
         return False
 
     # Calculate lower, upper, digit and special char
