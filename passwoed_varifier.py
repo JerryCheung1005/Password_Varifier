@@ -15,8 +15,6 @@ def main():
     and no 3 consecutive chars 
     ''')
 
-    if SPECIAL_CHARS_REQUIRED:
-        print("\tand 1 or more special characters: ", SPECIAL_CHARACTERS)
 
     # Input the password
     password = input("Enter a password: ")
@@ -26,11 +24,10 @@ def main():
         print("Breakdown of the password")
         print("Length of your password is: ", str(len(password)))
         print("Invalid password. Try again please.")
+
         if 2 <= Try_time <= 5:
-            while True:
-                answer = input("Want to set your password? Type 1 for yes and 0 for no:")
-                if answer == 1:
-                    pass
+
+            answer = input("Want to set your password? Type 1 for yes and 0 for no:")
 
         password = input("Enter a password: ")
         if Try_time == 5:
