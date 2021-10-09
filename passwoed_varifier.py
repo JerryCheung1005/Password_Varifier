@@ -27,9 +27,17 @@ def main():
 
         if 2 <= Try_time <= 5:
 
+            # Ask for choice
             answer = input("Want to set your password? Type 1 for yes and 0 for no:")
+            while True:
+                if answer == '0':
+                    return False
+                else:
+                    break
 
         password = input("Enter a password: ")
+
+        # User inputs invalid passwords for 5 times
         if Try_time == 5:
             print("You have exceed the max number of chances! Bye.")
             print('''
@@ -43,6 +51,7 @@ def main():
                 and no 3 consecutive chars 
                 ''')
             break
+
     if is_valid_password(password):
         print("Your " + str(
             len(password)) + " character password is valid: " + password)
