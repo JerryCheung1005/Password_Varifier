@@ -23,6 +23,7 @@ def main():
         print("Breakdown of the password")
         print("Length of your password is: ", str(len(password)))
         print("Invalid password. Try again please.")
+        print("\n")
 
         if 2 <= Try_time <= 5:
 
