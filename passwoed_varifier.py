@@ -15,7 +15,6 @@ def main():
     and no 3 consecutive chars 
     ''')
 
-
     # Input the password
     password = input("Enter a password: ")
     Try_time = 1
@@ -40,10 +39,7 @@ def main():
         # User inputs invalid passwords for 5 times
         if Try_time == 5:
             print("You have exceed the max number of chances! Bye.")
-            print('''
-            
-            
-            ''')
+            print ("\n\n\n")
             print('''The rules for creating a password here are:
                 The minimum length should be of 10 characters including
                 at least one numerical value, one uppercase English alphabet, 
