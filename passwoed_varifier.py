@@ -31,8 +31,9 @@ def main():
             while True:
                 if answer == '0':
                     return False
-                else:
+                elif answer == '1':
                     break
+                answer = input("Want to set your password? Type 1 for yes and 0 for no:")
 
         password = input("Enter a password: ")
 
